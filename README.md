@@ -1,18 +1,13 @@
+Coding Challenges
+ABOUT This repository is filled with tutorials for coding challenges found on Codewars. These files are designed to instruct students on the process of thinking behind solving a challenge.
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+INSTALLING
 
+Windows:
 
-Hi there! Welcome to Cloud9 IDE!
+Navigate to your local server e.g /c/xampp/htdocs and get a copy of the app from: https://github.com/irokko/codewars.git
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+Linux:
 
-Happy coding!
-The Cloud9 IDE team
+$ cd /var/www/html/
+$ git clone https://github.com/irokko/codewars.git
