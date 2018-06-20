@@ -1,0 +1,9 @@
+First non-repeating character
+
+
+def  first_non_repeating_letter(s) 
+  s.each_char do |char|
+    return char if s.downcase.count(char.downcase) < 2
+  end
+  ""
+end
