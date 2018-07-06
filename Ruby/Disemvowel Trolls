@@ -1,0 +1,20 @@
+Disemvowel Trolls
+Kata 7 KYU
+
+Solution 
+def disemvowel(str)
+  vowels ="aeiouAEIOU"
+  new=[]
+  str.each_char do |i|
+    if vowels.include? i
+    else
+      new.push(i)
+    end
+  end
+  return new.join
+end
+
+Simple:
+def disemvowel(str)
+  str.delete('aeiouAEIOU')
+end
