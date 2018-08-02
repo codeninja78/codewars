@@ -1,3 +1,6 @@
+=begin
+Simple Max Digit Sum 6-Kyu
+
 Problem:
 In this Kata, you will be given an integer n and your task will be to return the largest integer that is <= n and has the highest digit sum.
 
@@ -9,19 +12,16 @@ solve(48) = 48. Note that 39 is also an option, but 48 is larger.
 Input range is 0 > n > 10e11
 
 More examples in the test cases.
-
 Good luck!
 
+=end
 
-
-
-How I completed the problem:
+#My solution:
 def solve(n)
   ([n]+(0...n.digits.size).map {|i| n-n%10**i-1}).max_by {|n| n.digits.sum}
-End
+end
 
-A cheeky approach:
-
+#A cheeky approach:
 def solve(n)
   newn = []
   narr =  n.to_s.split('')

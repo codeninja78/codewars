@@ -1,3 +1,4 @@
+=begin
 Unique In Order 6-Kyu
 
 Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.
@@ -21,8 +22,8 @@ If it isn't the same we can add it to our answer array.
 Lastly all we need to do is return the answer array
 return answer
 
-
-Solution:
+=end
+#My Solution:
 def unique_in_order(iterable)
   answer = []
   iterable.length.times do |x|
@@ -31,5 +32,5 @@ def unique_in_order(iterable)
   return answer
 end
 
-Better solution:
+#More simple solution:
 (iterable.is_a?(String) ? iterable.chars : iterable).chunk { |x| x }.map(&:first)

@@ -1,4 +1,5 @@
-Categorize New Member 7-KYU
+=begin
+Categorize New Member 7-Kyu
 
 The Western Suburbs Croquet Club has two categories of membership, Senior and Open. They would like your help with an application form that will tell prospective members which category they will be placed.
 
@@ -17,5 +18,16 @@ Output will consist of a list of string values (in Haskell: Open or Senior) stat
 Example Output
 ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
-Solution:
+First we take the block for each element
+    data.map
+    
+We now check for the age and handicap
+    { |age, handicap| 
+    
+If age is greater than or equal to 55 and also handicap is more than seven we'll either puts Senior or Open
+    age >= 55 && handicap > 7 ? "Senior" : "Open" 
+
+=end
+
+#Complete Solution:
 data.map { |age, handicap| age >= 55 && handicap > 7 ? "Senior" : "Open" }

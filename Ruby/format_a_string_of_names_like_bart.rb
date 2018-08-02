@@ -1,3 +1,4 @@
+=begin 
 Format a string of names like 'Bart, Lisa & Maggie'.
 Given: an array containing hashes of names
 
@@ -18,5 +19,7 @@ list([])
 # returns ''
 Note: all the hashes are pre-validated and will only contain A-Z, a-z, '-' and '.'.
 
-Solution:
+=end
+
+#Solution:
 names.map{|x| x.values}.join(", ").gsub(/(.*)(,)(.*)/, '\1 &\3')

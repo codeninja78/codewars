@@ -1,3 +1,6 @@
+=begin
+Complementary DNA  7-Kyu
+
 Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
 
 If you want to know more http://en.wikipedia.org/wiki/DNA
@@ -8,5 +11,19 @@ DNA_strand ("ATTGC") # return "TAACG"
 
 DNA_strand ("GTAT") # return "CATA"
 
-Solution:
-  dna.gsub(/[ATGC]/, "A" => "T", "T" => "A", "C" => "G", "G" => "C")
+
+Thought Process:
+This Kata wants us to replace certain chars with their desired output
+Best way I know t do this is gsub:
+    dna.gsub()
+
+A good resource for learning about it as a beginner is:
+https://medium.com/launch-school/ruby-methods-string-gsub-271f865317f5
+
+Next we'll fill in the chars we want to replace:
+(/[ATGC]/, "A" => "T", "T" => "A", "C" => "G", "G" => "C")
+
+=end
+
+#Complete Solution:
+dna.gsub(/[ATGC]/, "A" => "T", "T" => "A", "C" => "G", "G" => "C")

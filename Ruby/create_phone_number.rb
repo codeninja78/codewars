@@ -1,4 +1,5 @@
-Create Phone Number 6-KYU
+=begin
+Create Phone Number 6-Kyu
 
 Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
 
@@ -7,6 +8,7 @@ createPhoneNumber(Array[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) # => returns "(123) 456-7
 The returned format must be correct in order to complete this challenge. 
 Don't forget the space after the closing parentheses!
 
+=end
 
-Solution:
+#Solution:
 (#{str[0..2].join}) #{str[3..5].join}-#{str[6..10].join}
