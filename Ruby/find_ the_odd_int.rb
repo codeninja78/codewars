@@ -1,5 +1,5 @@
 =begin
-Find the odd int 7-Kyu
+Find the Odd Int 7-Kyu
 
 Given an array, find the int that appears an odd number of times.
 

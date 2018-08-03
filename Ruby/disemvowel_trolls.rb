@@ -1,5 +1,5 @@
 =begin
-Disemvowel Trolls 7-KYU
+Disemvowel Trolls 7-Kyu
 
 Trolls are attacking your comment section!
 
