@@ -11,20 +11,16 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 
 Note: for this kata y isn't considered a vowel.
 
-=end
 
-#My Solution:
-def disemvowel(str)
-  vowels ="aeiouAEIOU"
-  new=[]
-  str.each_char do |i|
-    if vowels.include? i
-    else
-      new.push(i)
-    end
-  end
-  return new.join
-end
+Thought Process:
+For this task it is good to go through ruby guides.
+
+As you learn more about string manipulation, it is easy to find the .delete method.
+
+Using this method to delete out specified characters you can come up with the solution easily in one line.
+
+
+=end
 
 
 #More Simple:

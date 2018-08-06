@@ -10,7 +10,7 @@ Input: 145263 Output: 654321
 
 Input: 1254859723 Output: 9875543221
 
-
+Thought Process:
 The first thing that came to mind is sort
 n.to_s.chars.sort
 
