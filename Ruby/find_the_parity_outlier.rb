@@ -10,7 +10,19 @@ Should return: 11 (the only odd number)
 [160, 3, 1719, 19, 11, 13, -21]
 Should return: 160 (the only even number)
 
+Thought Process:
+A simple way to check is if there is more than one even integer. 
+integers.count(&:even?) > 1
+
+If true we can find the one odd integer.
+ integers.find(&:odd?)
+ 
+If false we can find the even one.
+integers.find(&:even?)
+
+
 =end
+
 #Solution:
 def find_outlier(integers)
   integers.count(&:even?) > 1 ? integers.find(&:odd?) : integers.find(&:even?)
