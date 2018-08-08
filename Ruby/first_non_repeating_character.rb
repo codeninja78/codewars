@@ -11,6 +11,19 @@ If a string contains all repeating characters, it should return the empty string
 
 † Note: the function is called firstNonRepeatingLetter for historical reasons, but your function should handle any Unicode character.
 
+Thought Process:
+First we need to iterate through each of the characters of the string
+  s.each_char do |char|
+
+To solve this problem with the least amount of lines we will use
+  return char if
+
+The test cases show the string could have varying up and downcase letters so we will use
+   s.downcase
+
+Now we count the chars using .count and check if it occurs once
+   s.downcase.count(char.downcase) < 2
+
 =end
 
 #Solution:
