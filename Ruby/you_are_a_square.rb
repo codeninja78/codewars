@@ -17,6 +17,13 @@ Examples
 is_square (-1) # => false
 is_square   0 # => true
 
+Thought Process:
+If case is -1 we will return false
+  retun false if x < 0
+
+If not we'll return true and we will check find the answer by getting the remainder of the square root of x
+  (x ** 0.5) % 1 == 0
+
 =end
 
 #Solution:
