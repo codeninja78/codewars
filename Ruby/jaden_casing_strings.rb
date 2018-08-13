@@ -11,6 +11,12 @@ Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
 Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
 Note that the Java version expects a return value of null for an empty string or null.
 
+Thought Process:
+Looking at the test cases it is easy to see that Jaden Casing is simply capitalizing each word.
+We can use the split method to return an array of the each word.
+Next we can use .map(&:capitalize) to capitalize each word.
+Finally we will use .join to put each word back into our new sentence
+
 =end
 
 #Solution:
