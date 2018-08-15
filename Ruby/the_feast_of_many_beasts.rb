@@ -7,6 +7,18 @@ Write a function feast that takes the animal's name and dish as arguments and re
 
 Assume that beast and dish are always lowercase strings, and that each has at least two letters. beast and dish may contain hyphens and spaces, but these will not appear at the beginning or end of the string. They will not contain numerals.
 
+Thought Process:
+For the test cases we want to check if the beast's first letter of name 
+    beast[0]
+And last letter 
+    beast[-1]
+    
+Are equal (Test casses want us to return true or false)
+    ==
+
+To the dish's first and last letter
+     dish[0] + dish[-1]
+
 =end
 
 #Solution:
