@@ -17,8 +17,7 @@ Are equal (Test casses want us to return true or false)
     ==
 
 To the dish's first and last letter
-     dish[0] + dish[-1]
-
+    dish[0] + dish[-1]
 =end
 
 #Solution:
