@@ -26,6 +26,23 @@ nb_year(1500, 5, 100, 5000) -> 15
 nb_year(1500000, 2.5, 10000, 2000000) -> 10
 Note: Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
 
+Thought Process:
+There are four parameters to take into account
+First step we'll take is to create the variable count to keep track of the years
+    count = 0
+
+Next we will create a while loop to iterate through every year until we've reached the population we need to surpass
+  while p0 < p do
+  
+We'll set p0 param to equal the answer which will be the current answer plus the percentage of the increase for that year plus the amount arriving or leaving for that year
+    p0 = p0 + (p0 * percent / 100).floor + aug
+
+We will then increase the year
+  count += 1
+
+Once population is greater or equal to p we will end the loop and return the count
+  return count
+
 =end
 
 #Solution:
