@@ -21,6 +21,21 @@ If it isn't the same we can add it to our answer array.
 
 Lastly all we need to do is return the answer array
   return answer
+  
+Thought Process:
+First we'll create the variable answer wich will store our solution. For now it will contain an empty array.
+  answer = []
+
+Next for the parameter we will iterate through the length of the array
+  iterable.length.times do |x|
+  
+For each index we will check to see if it does not equal the next index
+  iterable[x] != iterable[x+1]
+
+If it doesn't we will push it to it_array
+  it_array << iterable[x] 
+
+Finally we wil return the answer
 
 =end
 
